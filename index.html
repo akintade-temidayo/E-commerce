@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>E-Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,
+wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/0261cb4c11.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+</head>
+<body>
+    <!-- Navbar -->
+     <header class="shadow-md w-full">
+        <div>
+            <!-- Navbar content 1 -->
+             <div class="flex justify-between items-center py-3 px-8 border-b border-gray-200 text-[10px] font-poppins text-[#666666]">
+                <div class="flex items-center gap-3 ml-[7rem]">
+                   <img src="assets/icons/MapPin.png" alt="map pin" class="w-3">
+                     <span>Store Location: Lincoln- 344, Illinois, Chicago, USA</span>
+             </div>
+             <div class="flex items-center gap-3 font-poppins mr-[7rem] text-[10px] text-[#666666]">
+                <a href="#" class="hover:text-black hidden lg:block">ENG </a>
+                <a href="#" class="hover:text-black hidden lg:block">USD </a>
+                <div class="h-4 w-[1px] bg-gray-300"></div> <span><a href="#" class="hover:text-black">Sign In / Sign Up </a></span>
+             </div> 
+     </div>
+        <!-- Navbar content 2 -->
+         <div class="flex justify-between items-center py-5 px-8 bg-white">
+            <!-- logo -->
+            <div class="flex items-center gap-1">
+                <img src="assets/icons/plant 1.jpg" alt="logo" class="ml-[7rem] w-8 h-8">
+            <span class="font-bond font-poppings-700 text-2xl text-[#002603]">Ecobazar</span>
+            </div>
+             <!-- search bar -->
+            <div class="flex flex-1 max-w-xl mx-10 border border-gray-200 rounded-lg overflow-hidden">
+                <div class="flex items-center px-4 py-2 w-full gap-2">
+                    <img src="assets/icons/Search (1).png" alt="search">
+                    <input type="text" placeholder="Search" class="w-full outline-none text-sm hover:text-black">
+                </div>
+                <button class="bg-[#00B207] text-white py-2 px-5 font-poppings-semibold">Search</button>
+            </div>
+             <!-- navigation -->
+              <div class="flex items-center gap-3 font-poppins mr-[7rem]">
+                <img src="assets/icons/Heart.png" alt="heart" class="w-5">
+                <div class="h-6 w-[1px] bg-gray-300"></div> <span><img src="assets/icons/Bag.png" alt="bag" class="w-5"></span>
+                <div class="text-xs">
+                   <p class="text-gray-500">Shopping cart:</p>
+                    <p class="font-bold">$57.00</p>
+                </div>
+             </div> 
+              <!-- Navbar content 3 -->
+         </div>
+          
+        <div class="bg-[#333333] flex justify-between items-center px-8 py-3">
+            <nav class="flex items-center gap-5 ml-[7rem]">
+                <div class="text-[#ffffff] text-sm mr-2"><a href="#">Home <i class="fa-solid fa-angle-down"></i></a></div>
+                <div class="text-[#999999] text-sm hover:text-white mr-2"><a href="#">Shop <i class="fa-solid fa-angle-down"></i></a></div>
+                <a href="#" class="text-sm text-[#999999] hover:text-white mr-2">Pages <i class="fa-solid fa-angle-down"></i></a>
+                <a href="#" class="text-sm text-[#999999] hover:text-white mr-2">Blog <i class="fa-solid fa-angle-down"></i></a>
+                <a href="#" class="text-sm text-[#999999] hover:text-white mr-2">About Us </a>
+                <a href="#" class="text-sm text-[#999999] hover:text-white">Contact</a>
+            </nav>
+            <div class="flex items-center gap-1 mr-[7rem] text-sm gap-2">
+            <p class="text-white text-sm font-poppins-regular w-138"><i class="fa-solid fa-phone"></i> (219) 555-0114</p>
+            </div>
+        </div>
+          <!-- Page sub-header --> 
+        <div class="bg-[url(assets/images/Breadcrumbss.png)] px-8 py-7 bg-cover bg-center w-full h-[90px] shadow-md flex items-center">
+           <a href="#" class="text-sm text-gray-400 hover:text-white ml-[7rem]"><i class="fa-regular fa-house"></i> <i class="fa-solid fa-angle-right"></i></a>
+            <a href="#" class="text-sm text-gray-400 hover:text-white">Category <i class="fa-solid fa-angle-right"></i></a>
+            <a href="#" class="text-sm text-gray-400 hover:text-white">Vegetables<i class="fa-solid fa-angle-right"></i></a>
+            <a href="#" class="text-sm text-[#00B207]">Chinese Cabbage</a>
+        </div>
+     </header>
+   
+     <!-- First section -->
+    <section class="max-w-[1440px] mx-auto px-8 py-10 grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+        <div class="flex gap-4">
+            <div class="flex flex-col gap-1 ml-[7rem] align-items-center h-full">
+                 <i class="fa-solid fa-angle-up text-gray-400 mb-[2rem] ml-[1.5rem] hover:text-[#00B207] cursor-pointer"></i>
+                <a href="#"><img src="assets/images/product-1.png" class="w-[4.5rem] h-[5rem] border border-[#00B207] rounded-lg cursor-pointer"></a>
+                <a href="#"><img src="assets/images/product2.png" class="w-[4.5rem] h-[5rem] border border-gray-100 rounded-lg  cursor-pointer hover:border-[#00B207]"></a>
+                <a href="#"><img src="assets/images/product3.png" class="w-[4.5rem] h-[5rem] border border-gray-100 rounded-lg  cursor-pointer hover:border-[#00B207]"></a>
+                <a href="#"><img src="assets/images/product4.png" class="w-[4.5rem] h-[5rem] border border-gray-100 rounded-lg  cursor-pointer hover:border-[#00B207]"></a>
+                <i class="fa-solid fa-angle-down text-gray-400 mt-[2rem] ml-[1.5rem] hover:text-[#00B207] cursor-pointer"></i>
+            </div>
+            <div class="flex-1">
+                <img src="assets/images/mainproduct.png" class="w-full h-auto rounded-xl">
+            </div>
+        </div>
+         <!-- Typo part -->
+        <div class="space-y-5">
+            <h2 class="text-3xl font-poppins font-bold text-[#1A1A1A] mb-4">Chinese Cabbage</h2>
+        </div>
+    </section>
+
+      <!-- Footer --> 
+       <footer class="w-full font-poppins ">
+        <!-- Subscription --> 
+            <div class="bg-[#F7F7F7]">
+                <div class="max-w-[1440px] mx-auto py-10 px-8 flex flex-col lg:flex-row justify-between items-center gap-5 ml-[7rem]">
+                    <div class="max-w-md">
+                        <h3 class="text-2xl font-poppins font-bold text-[#1A1A1A]">Subscribe our Newsletter</h3>
+                             <p class="text-[#999999] text-sm font-poppins">Pellentesque eu nibh eget mauris congue
+                                 mattis mattis nec <br> tellus. Phasellus imperdiet elit eu magna.</p>
+                    </div>
+                        <div class="flex flex-1 max-w-[30rem] w-full border border-gray-200 rounded-full overflow-hidden bg-white md:text-sm">
+                            <input type="email" placeholder="Your email address" class="px-6 py-3 w-full outline-none text-sm">
+                            <button class="bg-[#00B207] text-white py-2 px-9 font-poppings-semibold rounded-full text-sm">Subscribe</button>
+                    </div>
+                    <div class="flex gap-2 mr-[7rem]">
+                        <button class="w-10 h-10 bg-[#00B207] text-white rounded-full flex items-center justify-center w-7 h-7">f</button>
+                        <button class="w-10 text-black rounded-full flex items-center justify-center w-7 h-7"><img src="assets/icons/twitter 1.png" alt="twitter"></button>
+                        <button class="w-10 text-black rounded-full flex items-center justify-center w-7 h-7"><img src="assets/icons/pinterest 1.png" alt="pintrest"></button>
+                        <button class="w-10 text-black rounded-full flex items-center justify-center w-7 h-7"><img src="assets/icons/instagram 1.png" alt="instagram"></button>
+                    </div>
+                </div>
+         <!-- middle footer --> 
+<!-- middle footer --> <div class="bg-[#1A1A1A] text-white py-16 px-8">
+    <!-- parent div --> <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 md:max-w-[1440px] mx-auto">
+
+        <div class="lg:col-span-1 space-y-4"></div>
+                </div>
+             </div>     
+</div>
+       </footer>
+</body>
+</html> 
