@@ -11,126 +11,664 @@
 wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/0261cb4c11.js" crossorigin="anonymous"></script>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
+    <script src="inde.js"></script>
 </head>
 <body>
-    <!-- Navbar -->
-     <header class="shadow-md w-full">
-        <div>
-            <!-- Navbar content 1 -->
-             <div class="flex justify-between items-center py-3 px-8 border-b border-gray-200 text-[10px] font-poppins text-[#666666]">
-                <div class="flex items-center gap-3 ml-[7rem]">
-                   <img src="assets/icons/MapPin.png" alt="map pin" class="w-3">
-                     <span>Store Location: Lincoln- 344, Illinois, Chicago, USA</span>
-             </div>
-             <div class="flex items-center gap-3 font-poppins mr-[7rem] text-[10px] text-[#666666]">
-                <a href="#" class="hover:text-black hidden lg:block">ENG </a>
-                <a href="#" class="hover:text-black hidden lg:block">USD </a>
-                <div class="h-4 w-[1px] bg-gray-300"></div> <span><a href="#" class="hover:text-black">Sign In / Sign Up </a></span>
-             </div> 
-     </div>
-        <!-- Navbar content 2 -->
-         <div class="flex justify-between items-center py-5 px-8 bg-white">
+    <!-- Navbars -->
+    <header class="w-full font-poppins">
+        <!-- First section -->
+        <div class="bg-[#333333] text-gray-400 text-sm hidden md:flex py-2 px-6 md:px-10 flex justify-between items-center border-b border-gray-300">
+            <div class="flex items-center gap-1"> 
+                <img src="assets/icons/MapPin.png" alt=""> Store Location: Lincoln- 344, Illinois, Chicago, USA
+            </div>
+            <div class="flex justify-between items-center gap-5 hidden md:flex text-sm text-gray-400">
+                <div class="flex items-center gap-2">
+                    ENG <i class="fa-solid fa-angle-down"></i>
+                    USD <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div class="bg-gray-300 h-5 w-px"> </div>
+                <div class="flex items-center gap-2">
+                    <a href="#" class="hover:text-white cursor-pointer">Sign in </a>
+                    <span class="text-gray-400">/</span>
+                    <a href="#" class="hover:text-white cursor-pointer">Sign up</a>
+                </div>
+            </div>
+        </div>
+        <!-- Second section -->
+        <div class="flex flex-col md:flex-row justify-between items-center py-4 px-6 md:px-10 gap-6 border-b border-gray-300">
             <!-- logo -->
-            <div class="flex items-center gap-1">
-                <img src="assets/icons/plant 1.jpg" alt="logo" class="ml-[7rem] w-8 h-8">
-            <span class="font-bond font-poppings-700 text-2xl text-[#002603]">Ecobazar</span>
+            <div class="flex items-center w-40">
+                <img src="assets/icons/Logo.png" alt="logo">
             </div>
-             <!-- search bar -->
-            <div class="flex flex-1 max-w-xl mx-10 border border-gray-200 rounded-lg overflow-hidden">
-                <div class="flex items-center px-4 py-2 w-full gap-2">
-                    <img src="assets/icons/Search (1).png" alt="search">
-                    <input type="text" placeholder="Search" class="w-full outline-none text-sm hover:text-black">
-                </div>
-                <button class="bg-[#00B207] text-white py-2 px-5 font-poppings-semibold">Search</button>
+            <!-- Search -->
+            <div class="flex w-200 md:w[350px] lg:w-[450px] max-w-2xl border border-gray-200 rounded-lg overflow-hidden gap-2">
+                <i class="fa-solid fa-magnifying-glass flex items-center px-4 py-2"></i>
+                <input type="text" placeholder="Search" class="w-full flex-grow py-2  text-gray-700 outline-none text-sm">
+                <button class="bg-[#00B207] text-[#FFFFFF] w-[100px] font-semibold hover:bg-gray-300 hover:text-[#00B207] transition">Search</button>
             </div>
-             <!-- navigation -->
-              <div class="flex items-center gap-3 font-poppins mr-[7rem]">
-                <img src="assets/icons/Heart.png" alt="heart" class="w-5">
-                <div class="h-6 w-[1px] bg-gray-300"></div> <span><img src="assets/icons/Bag.png" alt="bag" class="w-5"></span>
-                <div class="text-xs">
-                   <p class="text-gray-500">Shopping cart:</p>
-                    <p class="font-bold">$57.00</p>
+            <!-- last -->
+            <div class="flex items-center gap-3 text-medium ">
+                <i class="fa-regular fa-heart hover:text-[#00B207] cursor:pointer"></i>
+                <div class="bg-gray-500 h-5 w-px"> </div>
+                <div class="relative">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="absolute -top-2 -right-2 bg-[#00B207] text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">2</span>
                 </div>
-             </div> 
-              <!-- Navbar content 3 -->
-         </div>
-          
-        <div class="bg-[#333333] flex justify-between items-center px-8 py-3">
-            <nav class="flex items-center gap-5 ml-[7rem]">
-                <div class="text-[#ffffff] text-sm mr-2"><a href="#">Home <i class="fa-solid fa-angle-down"></i></a></div>
-                <div class="text-[#999999] text-sm hover:text-white mr-2"><a href="#">Shop <i class="fa-solid fa-angle-down"></i></a></div>
-                <a href="#" class="text-sm text-[#999999] hover:text-white mr-2">Pages <i class="fa-solid fa-angle-down"></i></a>
-                <a href="#" class="text-sm text-[#999999] hover:text-white mr-2">Blog <i class="fa-solid fa-angle-down"></i></a>
-                <a href="#" class="text-sm text-[#999999] hover:text-white mr-2">About Us </a>
-                <a href="#" class="text-sm text-[#999999] hover:text-white">Contact</a>
-            </nav>
-            <div class="flex items-center gap-1 mr-[7rem] text-sm gap-2">
-            <p class="text-white text-sm font-poppins-regular w-138"><i class="fa-solid fa-phone"></i> (219) 555-0114</p>
+                <div class="flex flex-col">
+                <span class="font-[10px] ">Shopping cart:</span>
+                <span class="font-bold leading-tight">$57.00</span>
+                </div>
             </div>
         </div>
-          <!-- Page sub-header --> 
-        <div class="bg-[url(assets/images/Breadcrumbss.png)] px-8 py-7 bg-cover bg-center w-full h-[90px] shadow-md flex items-center">
-           <a href="#" class="text-sm text-gray-400 hover:text-white ml-[7rem]"><i class="fa-regular fa-house"></i> <i class="fa-solid fa-angle-right"></i></a>
-            <a href="#" class="text-sm text-gray-400 hover:text-white">Category <i class="fa-solid fa-angle-right"></i></a>
-            <a href="#" class="text-sm text-gray-400 hover:text-white">Vegetables<i class="fa-solid fa-angle-right"></i></a>
-            <a href="#" class="text-sm text-[#00B207]">Chinese Cabbage</a>
+        <!-- third section -->
+        <div class="bg-[#FFFFFF] text-gray-600 text-sm py-2 px-6 md:px-10 flex justify-between items-center border-b border-gray-300 ">
+            <div class="hidden md:block">
+                <nav class="flex md:gap-6 lg:gap-8">
+                    <a href="#" class="text-[#00B207] font-medium hover:text-gray-600 cursor:pointer">Home <i class="fa-solid fa-angle-down"></i></a>
+                    <a href="#" class="hover:text-[#00B207] font-[14px] cursor:pointer">Shop <i class="fa-solid fa-angle-down"></i></a>
+                    <a href="#" class="hover:text-[#00B207] font-[14px] cursor:pointer">Pages <i class="fa-solid fa-angle-down"></i></a>
+                    <a href="#" class="hover:text-[#00B207] font-[14px] cursor:pointer">Blog <i class="fa-solid fa-angle-down"></i></a>
+                    <a href="#" class="hover:text-[#00B207] font-[14px] cursor:pointer">About Us</a>
+                    <a href="#" class="hover:text-[#00B207] font-[14px] cursor:pointer">Contact Us</a>
+                </nav>
+            </div>
+            <!-- For small screen -->  
+            <div class="group relative lg:hidden md:hidden block">
+                    <button class="bg-gray-200 px-3 py-1 md:px-4 md:py-2 cursor-pointer rounded-xl hover:bg-[#00B207] hover:text-white hover:scale-110 transition">☰ Menu</button>
+                    <div class="hidden group-hover:block absolute bg-gray-200 shadow-lg p-2 w-40 rounded-xl">
+                        <a href="#" class="block p-2 hover:bg-[#00B207] hover:text-white transition rounded-xl font-medium">Home <i class="fa-solid fa-angle-down"></i></a>
+                        <a href="#" class="block p-2 hover:bg-[#00B207] hover:text-white transition rounded-xl font-medium">Shop <i class="fa-solid fa-angle-down"></i></a>
+                        <a href="#" class="block p-2 hover:bg-[#00B207] hover:text-white transition rounded-xl font-medium">Pages <i class="fa-solid fa-angle-down"></i></a>
+                        <a href="#" class="block p-2 hover:bg-[#00B207] hover:text-white transition rounded-xl font-medium">Blog <i class="fa-solid fa-angle-down"></i></a>
+                        <a href="#" class="block p-2 hover:bg-[#00B207] hover:text-white transition rounded-xl font-medium">About us</a>
+                        <a href="#" class="block p-2 hover:bg-[#00B207] hover:text-white transition rounded-xl font-medium">Contact us</a>
+                        <a href="#" class="block p-2 bg-[#00B207] text-white font-semibold hover:bg-[#FFFFFF] hover:text-[#00B207] transition rounded-xl">Sign in / Sign up</a>
+                    </div>
+            </div>
+            <div class="flex items-center gap-2">
+                <img src="assets/icons/PhoneCall.png" alt="">
+                (219) 555-0114
+            </div>
         </div>
-     </header>
-   
-     <!-- First section -->
-    <section class="max-w-[1440px] mx-auto px-8 py-10 grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <!-- Page header -->
+        <div class="relative w-full h-18 md:h-20 flex items-center overflow-hidden bg-black hidden md:flex">
+            <img src="assets/images/Breadcrumbss.png" alt="page header" class="w-full h-full object-cover">
+            <div class="absolute flex justify-start font-medium gap-1 md:gap-2 items-center left-5 md:left-10">
+                <a href="#" class="text-gray-400 hover:text-[#00B207] font-[15px] cursor:pointer"><i class="fa-regular fa-house"></i></a><i class="fa-solid fa-angle-right text-gray-400"></i>
+                <a href="#" class="text-gray-400 hover:text-[#00B207] font-[15px] cursor:pointer">Category</a><i class="fa-solid fa-angle-right text-gray-400"></i>
+                <a href="#" class="text-gray-400 hover:text-[#00B207] font-[15px] cursor:pointer">Vegetables</a><i class="fa-solid fa-angle-right text-gray-400"></i>
+                <a href="#" class="text-[#00B207] hover:text-[#00B207] font-[15px] cursor:pointer">Chinese Cabbage</a>
+                
+            </div>
+        </div>
+    </header>
 
+    <!-- body -->
+
+    <!-- product description -->
+    <div class="grid lg:grid-cols-2 items-center bg-[#FFFFFF] py-10 px-6 md:px-10 gap-10 mx-auto">
+        <!-- image section -->
         <div class="flex gap-4">
-            <div class="flex flex-col gap-1 ml-[7rem] align-items-center h-full">
-                 <i class="fa-solid fa-angle-up text-gray-400 mb-[2rem] ml-[1.5rem] hover:text-[#00B207] cursor-pointer"></i>
-                <a href="#"><img src="assets/images/product-1.png" class="w-[4.5rem] h-[5rem] border border-[#00B207] rounded-lg cursor-pointer"></a>
-                <a href="#"><img src="assets/images/product2.png" class="w-[4.5rem] h-[5rem] border border-gray-100 rounded-lg  cursor-pointer hover:border-[#00B207]"></a>
-                <a href="#"><img src="assets/images/product3.png" class="w-[4.5rem] h-[5rem] border border-gray-100 rounded-lg  cursor-pointer hover:border-[#00B207]"></a>
-                <a href="#"><img src="assets/images/product4.png" class="w-[4.5rem] h-[5rem] border border-gray-100 rounded-lg  cursor-pointer hover:border-[#00B207]"></a>
-                <i class="fa-solid fa-angle-down text-gray-400 mt-[2rem] ml-[1.5rem] hover:text-[#00B207] cursor-pointer"></i>
+            <!-- select images section -->
+            <div class="flex flex-col gap-2 hidden md:flex">
+                <i class="fa-solid fa-angle-up ml-7 cursor-pointer hover:text-[#00B207] mb-5"></i>
+                <button class="w-30 h-30 border-2 border-[#00B207] rounded-lg overflow-hidden hover:scale-110">
+                    <img src="assets/images/product-1.png" alt="">
+                </button>
+                <button class="w-20 h-30 border-2 hover:border-[#00B207] rounded-lg overflow-hidden hover:scale-110">
+                    <img src="assets/images/product2.png" alt="">
+                </button>
+                <button class="w-20 h-30 border-2 hover:border-[#00B207] rounded-lg overflow-hidden hover:scale-110">
+                    <img src="assets/images/product3.png" alt="">
+                </button>
+                <button class="w-20 h-30 border-2 hover:border-[#00B207] rounded-lg overflow-hidden hover:scale-110">
+                    <img src="assets/images/product4.png" alt="">
+                </button>
+                <i class="fa-solid fa-angle-down ml-7 cursor-pointer hover:text-[#00B207] mt-5"></i>
             </div>
-            <div class="flex-1">
-                <img src="assets/images/mainproduct.png" class="w-full h-auto rounded-xl">
+            <!-- selected images section -->
+            <div class="flex-grow items-center rounded-2xl overflow-hidden ">
+                <img src="assets/images/mainproduct.png" alt="" class="w-30 md:w-full md:h-full object-cover">
             </div>
         </div>
-         <!-- Typo part -->
-        <div class="space-y-5">
-            <h2 class="text-3xl font-poppins font-bold text-[#1A1A1A] mb-4">Chinese Cabbage</h2>
+        <!-- description section -->
+        <div class="font-poppins flex flex-col">
+            <div class="flex items-center gap-2 md:gap-3">
+                <h2 class="text-[30px] md:text-[36px] font-bold text-[#1A1A1A]">Chinese Cabbage</h2>
+                <div class="bg-green-200 px-2 py-1 md:px-2 rounded-md text-sm font-medium text-[12px] md:text-[14px] text-[#2C742F]"> <p>In stock</p> </div>
+            </div>
+            <div class="flex items-center text-sm mt-2 gap-2">
+                <div class="flex text-[#FF8A00]">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="">4 reviews</span>
+                <div class="w-1 h-1 bg-gray-300 rounded-full"></div>
+                <p class="text-gray-900 font-medium">SKU: <span class="text-gray-500 font-normal">2,51,594</span></p>
+            </div>
+            <div class="flex items-center gap-3 mt-4"> 
+                <span class="text-sm line-through text-gray-400">$48.00</span>
+                <span class="text-[24px] font-medium text-[#00B207]">$17.28</span>
+                <div class="bg-[#EA4B48]/10 rounded-md ">
+                    <span class="text-sm text-[#EA4B48] font-medium px-2 py-1 md:px-2">
+                    64% off
+                </span>
+            </div>
         </div>
-    </section>
 
-      <!-- Footer --> 
-       <footer class="w-full font-poppins ">
+        <hr class="border-gray-300 mt-5 mb-5">
+
+        <div class="flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-2">
+                <span class="text-medium text-[14px] text-gray-600">
+                    Brand:
+                </span>
+                <img src="assets/images/brand.png" alt="">
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="text-sm text-gray-500">Share item:</span>
+                    <div class="flex gap-2">
+                        <button class="w-10 h-10 bg-[#00B207] text-white rounded-full flex items-center justify-center">
+                            f
+                        </button>
+                        <button class="w-10 text-black rounded-full flex items-center justify-center hover:bg-[#00B207] hover:text-white transition">
+                            <i class="fa-brands fa-twitter"></i>
+                        </button>
+                        <button class="w-10 text-black rounded-full flex items-center justify-center hover:bg-[#00B207] hover:text-white transition">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </button>
+                        <button class="w-10 text-black rounded-full flex items-center justify-center hover:bg-[#00B207] hover:text-white transition">
+                            <i class="fa-brands fa-instagram"></i>
+                        </button>
+                    </div> 
+            </div>
+        </div>
+            <p class="text-gray-500 leading-relaxed mt-3">
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos <br>
+                himenaeos. Nulla nibh diam, blandit vel consequat nec, ultrices et ipsum. Nulla <br>
+                varius magna a consequat pulvinar.
+            </p>
+
+        <hr class="border-gray-300 mt-5 mb-5">
+
+        <div class="flex flex-col md:flex-row justify-center items-center gap-1 W-full">
+            <div class="flex items-center border border-gray-200 rounded-full p-">
+                <button onclick="addOne2()" class="w-10 h-10 m-2 flex items-center justify-center rounded-full bg-gray-300 hover:bg-[#00B207] hover:text-white transition">
+                    <i class="fa-solid fa-minus text-gray-500"></i> 
+                </button>
+                    <span id="counterDisplay" class="w-12 text-center font-bold">
+                        5
+                    </span>
+                <button onclick="addOne1()" class="w-10 h-10 m-2 flex items-center justify-center rounded-full bg-gray-300 hover:bg-[#00B207] hover:text-white transition">
+                    <i class="fa-solid fa-plus text-gray-500"></i>
+                </button>
+            </div>
+            <button class="bg-[#00B207] md:w-[350px] text-white py-3 px-6 font-semibold rounded-full hover:bg-[#20B526]/10 hover:text-[#00B207] transition">
+                Add to cart
+            </button>
+            <button class="text-[#FFFFFF] w-10 h-10 m-2 flex items-center justify-center rounded-full bg-[#20B526] hover:bg-opacity-80 hover:text-[#DF4B5F] transition">
+                    <i class="fa-solid fa-heart"></i>
+            </button>
+        </div>
+
+        <hr class="border-gray-300 mt-5 mb-5">
+
+        <div class="flex flex-col justify-between gap-4">
+                <span class="font-semibold">
+                    Categories: <a href="#" class="text-[#808080] hover:text-[#00B207] transition">Vegetables</a>
+                    <br>
+                    <span class="font-semibold">
+                    Tag: <a href="#" class="text-[#808080] hover:text-[#00B207] transition">Vegetables</a>, 
+                    <a href="#" class="text-[#808080] hover:text-[#00B207] transition">healthy</a>,
+                    <a href="#" class="text-[#808080] hover:text-[#00B207] transition">Chinese</a>,
+                    <a href="#" class="text-[#808080] hover:text-[#00B207] transition">Green</a>,
+                    <a href="#" class="text-[#808080] hover:text-[#00B207] transition">Cabbage</a>
+                </span>
+        </div>
+        </div>
+       </div>
+
+       <!-- description -->
+        <section class="bg-white font-poppings ">
+
+            <!-- section header -->
+
+             <!-- on medium and large screen -->
+            
+             <div class="flex justify-center border-b border-gray-300 mb-12 w-full gap-6 hidden md:flex">
+                <button class="relative group pb-2 text-gray-500 text-[16px] hover:text-[#00B207] transition">
+                    Description
+                     <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#00B207] transition-all group-hover:w-full"></span>
+                </button>
+                <button class="pb-2 text-[#00B207] text-[16px] text-[#00B207] border-b-2 border-[#00B207]">
+                    Additional Information 
+                </button>
+                <button class="relative group pb-2 text-gray-500 text-[16px] hover:text-[#00B207] transition">
+                    Customer Feedback
+                     <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#00B207] transition-all group-hover:w-full"></span>
+                </button>
+             </div>
+
+              <!-- For small screen -->  
+            <div class="group relative flex justify-center pb-2 lg:hidden md:hidden block">
+                    <button class="relative group text-gray-800 text-[16px] hover:text-[#00B207] transition bg-gray-200 px-3 py-2 md:px-4 md:py-2 cursor-pointer w-full ">
+                        Menu ☰
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#00B207] transition-all group-hover:w-full"></span>
+                    </button>
+                    <div class="hidden group-hover:block absolute bg-gray-200 shadow-lg p-2 w-full mt-11 rounded-xl space-y-1">
+                        <a href="#" class="block p-2 hover:bg-[#20B526]/20 hover:text-white transition rounded-xl font-medium">
+                            Description
+                        </a>
+                        <a href="#" class="block p-2 bg-[#20B526]/20 text-white rounded-xl font-medium">
+                            Additional Information
+                        </a>
+                        <a href="#" class="block p-2 hover:bg-[#20B526]/20 hover:text-white transition rounded-xl font-medium">
+                            Customer Feedback
+                        </a>
+                </div>
+            </div>
+
+            <!-- Section body -->
+                
+            <div class="flex flex-col lg:flex-row justify-center items-center bg-[#FFFFFF] py-2 px-6 md:px-10 gap-20 mb-5">
+
+                    <!-- Typo -->
+                
+                <div class="space-y-1 text-sm md:text-base">
+                <div class="flex py-1">
+                    <span class="w-32 font-bold text-gray-900">Weight:</span>
+                    <span class="text-gray-500">03</span>
+                </div>
+                <div class="flex py-1">
+                    <span class="w-32 font-bold text-gray-900">Color:</span>
+                    <span class="text-gray-500">Green</span>
+                </div>
+                <div class="flex py-1">
+                    <span class="w-32 font-bold text-gray-900">Type:</span>
+                    <span class="text-gray-500">Organic</span>
+                </div>
+                <div class="flex py-1">
+                    <span class="w-32 font-bold text-gray-900">Category:</span>
+                    <span class="text-gray-500">Vegetables</span>
+                </div>
+                <div class="flex py-1">
+                    <span class="w-32 font-bold text-gray-900">Stock Status:</span>
+                    <span class="text-gray-500">Available (5,413)</span>
+                </div>
+                <div class="flex py-1">
+                    <span class="w-32 font-bold text-gray-900">Tags:</span>
+                    <span class="text-gray-500 leading-relaxed">
+                        Vegetables, Healthy, <span class="text-gray-900 border-b border-dotted border-gray-400">Chinese</span>, Cabbage, Green Cabbage,
+                    </span>
+                </div>
+                </div>
+
+                <!-- video -->
+                <div class="flex flex-col gap-5 ">
+                    
+                    <div class="relative w-full overflow-hidden group cursor-pointer shadow-lg">
+                        <video class="w-96 rounded-base" controls>
+                            <source src="/docs/videos/flowbite.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        
+                        <button class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-[#20B526] flex items-center justify-center rounded-full text-[#FFFFFF] font-medium w-[50px] h-[50px] hover:scale-110 hover:bg-[#20B526]/20 hover:text-gray-400 hover:font-bold transition-all">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="border border-1 border-gray-300 rounded-sm shadow-sm p-4 gap-2 flex justify-between">
+                        <div class="flex gap-2">
+                            <img src="assets/icons/price-tag1.png" alt="">
+                            <p class="flex flex-col text-[12px] font-medium">
+                                64% Discount
+                                <span class="text-gray-500 text-[10px] font-medium">
+                                    Save your 64% money with us
+                                </span>
+                            </p>
+                        </div>
+
+                        <div class="flex gap-2">
+                            <img src="assets/icons/leaf1.png" alt="">
+                            <p class="flex flex-col text-[12px] font-medium">
+                                100% Organic
+                                <span class="text-gray-500 text-[10px] font-medium">
+                                    100% Organic Vegetables
+                                </span>
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- last section -->
+
+        <section class="bg-white py-10 px-6 md:px-10 gap-10 mx-auto">
+
+                <div class="flex justify-center text-[24px] md:text-[32px] font-bold mb-5">
+                    Related Products
+                </div>
+
+        <!-- Related products sections -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-3 items-center justify-center mb-10">
+
+                    <!-- card 1 -->
+                        <div class="bg-white block max-w-sm border border-2 border-gray-100 rounded-2xl shadow-lg overflow-hidden hover:border-[#00B207] hover:scale-105 transition-all">
+                            <div class="relative overflow-hidden">
+                            <a href="#">
+                                <img class="rounded-t-base hover:scale-105 transition-all overflow-hidden" src="assets/images/greenapple.png" alt="">
+                            </a>
+                            <span class="absolute top-3 left-2 bg-[#EA4B48] text-[#FFFFFF] text-sm p-1 rounded-sm shadow-lg">
+                                sale 50%
+                            </span>
+                            </div>
+
+                        <div class="flex justify-between px-5 pt-4 pb-5">
+                            <div>
+                                <p class="text-[14px] text-gray-700 font-medium mb-1 hover:text-[#2C742F]">
+                                    Green Apple
+                                </p>
+                                <h3 class="flex leading-snug gap-2">
+                                <span class="text-[18px] font-medium text-black">$14.99</span>
+                                <span class="text-sm line-through text-gray-400">$20.99</span>
+                                </h3>
+
+                                <div class="mt-2 flex items-center gap-1 text-[#F6B76A] text-[12px]">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star text-[#F6B76A]/40"></i>
+                                </div>
+                            </div>
+                                <div>
+                                <button
+                                    aria-label="Add to cart"
+                                    class="w-11 h-11 rounded-full bg-gray-100 text-black flex items-center justify-center text-[22px] leading-none hover:bg-[#00B207] hover:text-[#FFFFFF] transition"
+                                >
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                </button>
+                                </div>
+
+                                </div>
+                            </div>
+                            
+                    <!-- card 2 -->
+                        <div class="bg-white block max-w-sm border border-2 border-gray-100 rounded-2xl shadow-lg overflow-hidden hover:border-[#00B207] hover:scale-105 transition-all">
+                            <div class="relative overflow-hidden">
+                            <a href="#">
+                                <img class="rounded-t-base hover:scale-105 overflow-hidden" src="assets/images/greencapiscum.png" alt="" />
+                            </a>
+                            
+                            </div>
+
+                         <div class="flex justify-between px-5 pt-4 pb-5">
+                            <div>
+                                <p class="text-[14px] text-gray-700 font-medium mb-1 hover:text-[#2C742F]">
+                                    Chanise Cabbage
+                                </p>
+                                <h3 class="flex leading-snug gap-2">
+                                <span class="text-[18px] font-medium text-black">$14.99</span>
+                               <span class="text-sm line-through text-gray-400">$20.99</span>
+                                </h3>
+
+                                <div class="mt-2 flex items-center gap-1 text-[#F6B76A] text-[12px]">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star text-[#F6B76A]/40"></i>
+                                </div>
+                                </div>
+                                <div>
+                                <button
+                                    aria-label="Add to cart"
+                                    class="w-11 h-11 rounded-full bg-gray-100 text-black flex items-center justify-center text-[22px] leading-none hover:bg-[#00B207] hover:text-[#FFFFFF] transition"
+                                >
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                </button>
+                                </div>
+
+                                </div>
+                            </div> 
+            <!-- card 3 -->
+                    <div class="bg-white block max-w-sm border border-2 border-[#00B207] rounded-2xl shadow-lg">
+                        <div class="relative">
+                            <a href="#">
+                                <img class="rounded-t-base" src="assets/images/geentomato.png" alt="" />
+                            </a>
+                            <div class="absolute top-5 right-5 flex flex-col gap-2">
+                                <button class="w-10 h-10 bg-white text-gray-900 rounded-full flex items-center justify-center shadow-md hover:bg-[#00B207] hover:text-white transition text-gray-600">
+                                    <i class="fa-regular fa-heart"></i>
+                                </button>
+                                <button class="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md hover:bg-[#00B207] hover:text-white transition text-gray-600">
+                                    <i class="fa-regular fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between px-5 pt-4 pb-5">
+                            <div>
+                                <p class="text-[14px] text-[#2C742F] font-medium mb-1">
+                                Green Capsicum
+                                </p>
+                                <h3 class="flex leading-snug gap-2">
+                                <span class="text-[18px] font-medium text-black">$14.99</span>
+                                <span class="text-sm line-through text-gray-400">$20.99</span>
+                                </h3>
+
+                                <div class="mt-2 flex items-center gap-1 text-[#F6B76A] text-[12px]">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star text-[#F6B76A]/40"></i>
+                                </div>
+                                </div>
+                                <div>
+                                <button
+                                    aria-label="Add to cart"
+                                    class="w-11 h-11 rounded-full bg-[#00B207] text-[#FFFFFF] flex items-center justify-center text-[22px] leading-none"
+                                >
+                                   <i class="fa-solid fa-bag-shopping"></i>
+                                </button>
+                                </div>
+
+                                </div>
+                        </div>
+                        
+
+            <!-- card 4 -->
+                    <div class="bg-white block max-w-sm border border-2 border-gray-100 rounded-2xl shadow-lg overflow-hidden hover:border-[#00B207] hover:scale-105 transition-all">
+                            <div class="relative overflow-hidden">
+                            <a href="#">
+                                <img class="rounded-t-base hover:scale-105 overflow-hidden" src="assets/images/ladiesfinger.png" alt="" />
+                            </a>
+                            
+                            </div>
+                                <div class="flex justify-between px-5 pt-4 pb-5">
+                            <div>
+                                <p class="text-[14px] text-gray-700 font-medium mb-1 hover:text-[#2C742F]">
+                                    Ladies Finger
+                                </p>
+                                <h3 class="flex leading-snug gap-2">
+                                <span class="text-[18px] font-medium text-black">$14.99</span>
+                                <span class="text-sm line-through text-gray-400">$20.99</span>
+                                </h3>
+
+                                <div class="mt-2 flex items-center gap-1 text-[#F6B76A] text-[12px]">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star text-[#F6B76A]/40"></i>
+                                </div>
+                            </div>
+                                <div>
+                                <button
+                                    aria-label="Add to cart"
+                                    class="w-11 h-11 rounded-full bg-gray-100 text-black flex items-center justify-center text-[22px] leading-none hover:bg-[#00B207] hover:text-[#FFFFFF] transition"
+                                >
+                                   <i class="fa-solid fa-bag-shopping"></i>
+                                </button>
+                                </div>
+
+                                </div>
+                            </div> 
+
+
+                </div>
+
+        </section>
+    
+
+    <!-- Footer --> 
+    <footer class="w-full font-poppins ">
         <!-- Subscription --> 
             <div class="bg-[#F7F7F7]">
                 <div class="max-w-[1440px] mx-auto py-10 px-8 flex flex-col lg:flex-row justify-between items-center gap-5 ml-[7rem]">
                     <div class="max-w-md">
                         <h3 class="text-2xl font-poppins font-bold text-[#1A1A1A]">Subscribe our Newsletter</h3>
-                             <p class="text-[#999999] text-sm font-poppins">Pellentesque eu nibh eget mauris congue
-                                 mattis mattis nec <br> tellus. Phasellus imperdiet elit eu magna.</p>
+                            <p class="text-[#999999] text-sm font-poppins">Pellentesque eu nibh eget mauris congue
+                                mattis mattis nec <br> tellus. Phasellus imperdiet elit eu magna.</p>
                     </div>
-                        <div class="flex flex-1 max-w-[30rem] w-full border border-gray-200 rounded-full overflow-hidden bg-white md:text-sm">
+                    <div class="flex flex-1 max-w-[30rem] w-full border border-gray-200 rounded-full overflow-hidden bg-white md:text-sm">
                             <input type="email" placeholder="Your email address" class="px-6 py-3 w-full outline-none text-sm">
                             <button class="bg-[#00B207] text-white py-2 px-9 font-poppings-semibold rounded-full text-sm">Subscribe</button>
                     </div>
                     <div class="flex gap-2 mr-[7rem]">
-                        <button class="w-10 h-10 bg-[#00B207] text-white rounded-full flex items-center justify-center w-7 h-7">f</button>
-                        <button class="w-10 text-black rounded-full flex items-center justify-center w-7 h-7"><img src="assets/icons/twitter 1.png" alt="twitter"></button>
-                        <button class="w-10 text-black rounded-full flex items-center justify-center w-7 h-7"><img src="assets/icons/pinterest 1.png" alt="pintrest"></button>
-                        <button class="w-10 text-black rounded-full flex items-center justify-center w-7 h-7"><img src="assets/icons/instagram 1.png" alt="instagram"></button>
+                            <button class="w-10 h-10 bg-[#00B207] text-white rounded-full flex items-center justify-center w-7 h-7">f</button>
+                            <button class=" p-2 text-[#1A1A1A] rounded-full flex items-center justify-center w-7 h-7 hover:bg-[#00B207] hover:scale-105 transition-transform duration-300">
+                                <img src="assets/icons/twitter 1.png" alt="twitter">
+                            </button>
+                            <button class="p-2 text-[#1A1A1A] rounded-full flex items-center justify-center w-7 h-7 hover:bg-[#00B207] hover:scale-105 transition-transform duration-300">
+                                <img src="assets/icons/pinterest 1.png" alt="pintrest">
+                            </button>
+                            <button class="p-2 text-[#1A1A1A] rounded-full flex items-center justify-center w-7 h-7 hover:bg-[#00B207] hover:scale-105 transition-transform duration-300">
+                                <img src="assets/icons/instagram 1.png" alt="instagram">
+                            </button>
                     </div>
                 </div>
-         <!-- middle footer --> 
-<!-- middle footer --> <div class="bg-[#1A1A1A] text-white py-16 px-8">
-    <!-- parent div --> <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 md:max-w-[1440px] mx-auto">
+            </div>
 
-        <div class="lg:col-span-1 space-y-4"></div>
+        <!-- black footer -->
+        <div class="bg-[#1A1A1A] text-[#FFFFFF] p-4 md:py-10 px-20 flex flex-col lg:flex-row justify-between items-center gap-5">
+            <div class="space-y-3">
+                <h2 class="flex text-[30px] gap-2">
+                    <img src="/assets/icons/plant1.png" alt="" class="w-10 h-10">
+                    Ecobazar
+                </h2>
+                <p class="text-gray-500 text-sm font-medium tracking-normal leading-[25px]">
+                    Morbi cursus porttitor enim lobortis molestie. <br>
+                    Duis gravida turpis dui, eget bibendum magna <br>
+                    congue nec.
+                </p>
+                <p class="font-medium space-x-4 space-y-4 mb-5">
+                    <span class="border-b-2 border-[#00B207] md:p-2 mb-4"> 
+                        (219) 555-0114
+                    </span>
+                    <span class="text-gray-500 text-sm">
+                        or
+                    </span>
+                    <span class="border-b-2 border-[#00B207] md:p-2"> 
+                        Proxy@gmail.com
+                    </span>
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 md:gap-7 lg:gap-20">
+                <!-- div 1 -->
+                <div class="mt-4 lg:mt-0">
+                    <h4 class="text-[16px] font-medium mb-4">
+                        My Account
+                    </h4>
+                    <p class="space-y-3 flex flex-col">
+                        <span class="text-gray-500 font-medium text-[12px] hover:text-white hover:font-bold transition-all"><a href="#">My Account</a></span>
+                        <span class="text-gray-500 font-medium text-[12px] hover:text-white hover:font-bold transition-all"><a href="#">Order History</a></span>
+                        <span class="text-white font-medium text-[12px] hover:text-white hover:font-bold transition-all"><a href="#">Shopping Cart</a></span>
+                        <span class="text-gray-500 font-medium text-[12px] hover:text-white hover:font-bold transition-all"><a href="#">Wislist</a></span>
+                    </p>
                 </div>
-             </div>     
-</div>
-       </footer>
+
+                <!-- div 2 -->
+                <div class="mt-4 lg:mt-0">
+                    <h4 class="text-[16px] font-medium mb-4">
+                        Helps
+                    </h4>
+                    <p class="space-y-3 flex flex-col">
+                        <span class="text-gray-500 font-medium text-[12px] hover:text-white hover:font-bold transition-all"><a href="#">Contacts</a></span>
+                        <span class="text-gray-500 font-medium text-[12px] hover:text-white hover:font-bold transition-all"><a href="#">FAQS</a></span>
+                        <span class="text-gray-500 font-medium text-[12px] hover:text-white hover:font-bold transition-all"><a href="#">Terms & Conditions</a></span>
+                        <span class="text-gray-500 font-medium text-[12px] hover:text-white hover:font-bold transition-all"><a href="#">Privacy Policy</a></span>
+                    </p>
+                </div>
+
+                <!-- div 3 -->
+                <div class="mt-4 lg:mt-0">
+                    <h4 class="text-[16px] font-medium mb-4">
+                        Proxy
+                    </h4>
+                    <p class="space-y-3 flex flex-col">
+                        <span class="text-gray-500 font-medium text-[12px] hover:text-white hover:font-bold transition-all"><a href="#">About</a></span>
+                        <span class="text-gray-500 font-medium text-[12px] hover:text-white hover:font-bold transition-all"><a href="#">Shop</a></span>
+                        <span class="text-gray-500 font-medium text-[12px] hover:text-white hover:font-bold transition-all"><a href="#">Products</a></span>
+                        <span class="text-gray-500 font-medium text-[12px] hover:text-white hover:font-bold transition-all"><a href="#">Track Order</a></span>
+                    </p>
+                </div>
+
+                <!-- div 4 -->
+                <div class="mt-4 lg:mt-0">
+                    <h4 class="text-[16px] font-medium mb-4">
+                        Categories
+                    </h4>
+                    <p class="space-y-3 flex flex-col">
+                        <span class="text-gray-500 font-medium text-[12px] hover:text-white hover:font-bold transition-all"><a href="#">Fruits & Vegetables</a></span>
+                        <span class="text-gray-500 font-medium text-[12px] hover:text-white hover:font-bold transition-all"><a href="#">Meat & Fish</a></span>
+                        <span class="text-gray-500 font-medium text-[12px] hover:text-white hover:font-bold transition-all"><a href="#">Bread & Bakery</a></span>
+                        <span class="text-gray-500 font-medium text-[12px] hover:text-white hover:font-bold transition-all"><a href="#">Beauty & Health</a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <section class="bg-[#1A1A1A] text-[#FFFFFF] justify-center items-center">
+            <div class="flex justify-between lg:mx-[7rem] border border-[0.5px] boder-gray-100 border-b-[#1A1A1A]  p-3">
+                <p class="ext-gray-500 text-sm">
+                    Ecobazar eCommerce © 2021. All Rights Reserved
+                </p>
+                <div class="flex flex-wrap items-center gap-2">
+                    <button class="hover:scale-110 tranistion-transform">
+                        <img src="/assets/icons/Method=ApplePay.png" alt="">
+                    </button>
+                    <button class="hover:scale-110 tranistion-transform">
+                        <img src="/assets/icons/Method=Visa.png" alt="">
+                    </button>
+                    <button class="hover:scale-110 tranistion-transform">
+                        <img src="/assets/icons/Method=Discover.png" alt="">
+                    </button>
+                    <button class="hover:scale-110 tranistion-transform">
+                        <img src="/assets/icons/Method=Mastercard.png" alt="">
+                    </button>
+                    <button class="hover:scale-110 tranistion-transform">
+                        <img src="/assets/icons/Cart.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </section>
+    
+    </footer>
 </body>
 </html> 
